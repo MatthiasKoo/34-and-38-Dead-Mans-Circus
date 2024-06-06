@@ -113,8 +113,13 @@ body {
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
     color: var(--background);
-    max-width: 10rem;
+    max-width: 12rem;
     min-height: 100vh;
+    font-size:25px;
+}
+
+.sidebar-links {
+    cursor:pointer;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
