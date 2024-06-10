@@ -12,6 +12,7 @@ body {
   font-size:40px;
 }
 
+/**titles**/
 .DEAD-title-text {
   position: absolute;
   top: 10vh;
@@ -23,6 +24,11 @@ body {
   top: 30vh;
   left: 85vh;
 }
+
+/**CSS grid**/
+.grid
+
+
 /** Hamburger start **/
 *, *::after, *::before {
     box-sizing: border-box;
