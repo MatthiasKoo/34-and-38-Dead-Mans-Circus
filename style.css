@@ -3,21 +3,44 @@ html {
   width: 100%;
 }
 
+h1{
+    text-align: center;
+    z-index:15;
+    position: relative;
+}
+
 /** Image slideshow CSS **/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 .container {
     height: 100vh;
     width: 100%;
     position: relative;
-    display: flex;
+    /**display: flex;**/
     z-index: 1; 
     justify-content:center;
     align-items:center;
+}
+
+/**titles**/
+.DEAD-title-text {
+    top: 10vh;
+    z-index: 15;
+    margin:auto;
+}
+
+h1 .CIRCUS-title-text {
+    top: 30vh;
+    z-index: 15;
+}
+
+p {
+    z-index: 15;
+    top:30vh;
+    text-align:center;
 }
 
 .overlay {
@@ -48,7 +71,7 @@ html {
     }
 }
 
-img {
+.slide-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -87,23 +110,23 @@ P {
     font-size: 28px;
 }
 
-/**titles**/
-.DEAD-title-text {
-    position: absolute;
-    top: 10vh;
-    left: 75vh;
-    z-index: 15;
-}
-
-.CIRCUS-title-text {
-    position: absolute;
-    top: 30vh;
-    left: 85vh;
-    z-index: 15;
-}
 
 /**CSS grid**/
-.grid
+.links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    z-index: 15;
+    position: relative;
+    top: 30vh;
+    padding:10%;
+}
+
+.link-img {
+    height:15%;
+    
+}
 
 /** Hamburger start **/
 *, *::after, *::before {
