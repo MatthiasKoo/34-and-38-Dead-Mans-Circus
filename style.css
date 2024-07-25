@@ -112,7 +112,9 @@ h1 {
 /**image links**/
 .links {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        'text text text'
+        'one two three';
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     z-index: 15;
@@ -120,15 +122,36 @@ h1 {
     padding:0px;
     padding-left:10%;
     padding-right:10%;
-    
+    padding-bottom: 140px;
+    background-image: url('https://i.ibb.co/F4rK3fT/IMG-6401.jpg');
+     background-repeat: no-repeat;
+    background-size: 100vw;
 }
 
 .link-img {
-    height:375px;
+    height:250px;
 }
 
 .link-img:hover {
   transform: scale(1.25);
+}
+
+.music-text {
+    grid-area:text;
+    position:absolute;
+    padding-bottom:30%;
+}
+
+.link-one {
+    grid-area:one;
+}
+
+.link-two {
+    grid-area: two;
+}
+
+.link-three {
+    grid-area: three;
 }
 
 /** Hamburger start **/
@@ -237,13 +260,6 @@ h1 {
     translate: 0;
 }
 /** end of hamburger menu FINALLY **/
-
-/**Music links**/
-.links {
-    background-image: url('https://i.ibb.co/F4rK3fT/IMG-6401.jpg');
-     background-repeat: no-repeat;
-    background-size: 100vw;
-}
 
 /**Newsletter**/
 .form-container {
