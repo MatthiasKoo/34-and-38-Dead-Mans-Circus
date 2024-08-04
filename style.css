@@ -3,9 +3,13 @@ html {
   width: 100%;
 }
 
-
-
 /**text settings**/
+body {
+    background-color: black;
+    color: #e61610;
+    font-family: Merienda;
+    font-size: 40px;
+}
 
 h1{
     text-align: center;
@@ -16,6 +20,7 @@ h1{
 h1 .CIRCUS-title-text {
     top: 30vh;
     z-index: 15;
+    -webkit-text-stroke: 1px black;
 }
 
 h2 {
@@ -98,17 +103,6 @@ img:nth-of-type(3) {
     animation-delay: 6s;
 }
 
-body {
-    background-color: black;
-    color: #e61610;
-    font-family: Merienda;
-    font-size: 40px;
-}
-
-h1 {
-    -webkit-text-stroke: 1px black;
-}
-
 /**image links**/
 .links {
     display: grid;
@@ -123,8 +117,8 @@ h1 {
     padding-left:10%;
     padding-right:10%;
     padding-bottom: 140px;
-    background-image: url('https://i.ibb.co/F4rK3fT/IMG-6401.jpg');
-     background-repeat: no-repeat;
+    background-image: url('https://i.postimg.cc/v82FWNxG/IMG-6401.png');
+    background-repeat: no-repeat;
     background-size: 100vw;
 }
 
@@ -138,8 +132,7 @@ h1 {
 
 .music-text {
     grid-area:text;
-    position:absolute;
-    padding-bottom:30%;
+    position:relative;
 }
 
 .link-one {
@@ -284,4 +277,34 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
+}
+
+
+/**Page 2: Members **/
+.member-container {
+    display: grid;
+    grid-template-areas: 
+        'vi sam'
+        'finn tj'
+        'matthias';
+}
+
+/** phone screens **/
+@media only screen and (max-width: 768px) {
+    :root {
+        --bar-width: 80px;
+        --bar-height: 10px;
+        --hamburger-gap: 6px;
+        --hamburger-margin: 8px;
+        --animation-timing: 200ms ease-in-out;
+        --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    }
+    
+    .link-img {
+        height:12vh;
+    }
+    
+    .music-text {
+    font-size: 40px;
+    }
 }
