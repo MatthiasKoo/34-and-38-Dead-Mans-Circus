@@ -281,13 +281,39 @@ input[type=submit]:hover {
 
 
 /**Page 2: Members **/
+.about-us {
+    font-style: underlined;
+}
+
+.vi {
+    grid-area:vi-one;
+}
+
+.sam {
+    grid-area:sam-two;
+}
+
+.finn {
+    grid-area:finn-three;
+}
+
+.tj {
+    grid-area:tj-four;
+}
+
+.matthias {
+    grid-area:matthias-five;
+}
+
 .member-container {
     display: grid;
     grid-template-areas: 
-        'vi sam'
-        'finn tj'
-        'matthias';
+        'vi-one sam-two'
+        'finn-three tj-four'
+        'matthias-five matthias-five';
+    grid-gap: 10px;
 }
+
 
 /** phone screens **/
 @media only screen and (max-width: 768px) {
