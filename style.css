@@ -34,6 +34,15 @@ p {
     font-size: 28px;
 }
 
+a {
+     color: #e61610;
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
+}
+
 /** Image slideshow CSS **/
 * {
     box-sizing: border-box;
@@ -245,10 +254,6 @@ img:nth-of-type(3) {
     left:0;
 }
 
-.sidebar-links {
-    cursor: pointer;
-}
-
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0;
 }
@@ -282,27 +287,39 @@ input[type=submit]:hover {
 
 /**Page 2: Members **/
 .about-us {
-    font-style: underlined;
+    font-weight: 1px;
+    background-image: url('https://i.ibb.co/p4Fb51R/IMG-6577.jpg');
+    background-size:100vw;
+    background-repeat:no-repeat;
+}
+
+.about-us h2 {
+    text-decoration: underline;
 }
 
 .vi {
     grid-area:vi-one;
+    display:flex;
 }
 
 .sam {
     grid-area:sam-two;
+    display:flex;
 }
 
 .finn {
     grid-area:finn-three;
+    display:flex;
 }
 
 .tj {
     grid-area:tj-four;
+    display:flex;
 }
 
 .matthias {
     grid-area:matthias-five;
+    display:flex;
 }
 
 .member-container {
@@ -314,6 +331,10 @@ input[type=submit]:hover {
     grid-gap: 10px;
 }
 
+.member-img {
+    height:175px;
+    padding-right:15px;
+}
 
 /** phone screens **/
 @media only screen and (max-width: 768px) {
@@ -332,5 +353,31 @@ input[type=submit]:hover {
     
     .music-text {
     font-size: 40px;
+    }
+/** phone screens - Member page **/
+    .member-container {
+        display: grid;
+        grid-template-areas: 
+            'vi-one'
+            'sam-two'
+            'finn-three'
+            'tj-four'
+            'matthias-five';
+        grid-gap: 10px;
+    }
+    
+    .member-img {
+        height:30vh;
+    }
+    
+    .about-us {
+        font-weight: 1px;
+        font-size: 20px;
+        background-image: url('https://i.ibb.co/p4Fb51R/IMG-6577.jpg');
+        background-size:100vw;
+        background-repeat:repeat;
+    }
+    .about-us p {
+        font-size:25px;
     }
 }
