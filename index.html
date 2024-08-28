@@ -7,8 +7,9 @@
     <html lang="en">
         <title>Dead Man's Circus</title>
         <link rel="icon" type="image/x-icon" href=""> <!--favicon for later-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="script.js"></script>
+        <script src="script.js"></script>
   <!--Font - Merienda -->
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'> 
 </head>
@@ -20,16 +21,16 @@
     <div class="container">
         <div class="overlay"></div>
 
-        <img src="https://images.unsplash.com/photo-1435034568314-8303dbda4b8c?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Circus Curtain" class="slide-image">
-        <img src="https://images.unsplash.com/photo-1576544403918-c47d52572a9a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Circus Tent" class="slide-image">
-        <img src="https://images.unsplash.com/photo-1568637836624-5bcbe4076ea6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Circus Act" class="slide-image">
+        <img src="Images/Circus-one.png" alt="Circus Curtain" class="slide-image">
+        <img src="Images/Circus-two.png"  alt="Circus Tent" class="slide-image">
+        <img src="Images/Circus-three.png"  alt="Circus Act" class="slide-image">
 
         <!--Title-->
         <br>
          <h1>DEAD MAN'S</h1>
          <h1>CIRCUS</h1>
         <p>Welcome to the Circus!</p>
-        <br>
+     <br>
         <p class="button"> <a href="https://open.spotify.com/album/7En7PQQFNbY1ZqpK9YW71l" target="_blank"> Stream Reflections</a></p>
     </div>
        <!-- Hamburger -->
@@ -39,18 +40,17 @@
         <aside class="sidebar">
             <nav>
                 <div class="sidebar-links">
-                 <a href="index.html"> Home.</a>
-             </div>
+                    <a href="index.html"> Home.</a></div>
                 <br>
                 <div class="sidebar-links">
                     <a href="members.html"> Members?</a></div>
-                    <br>
+                <br>
                 <div class="sidebar-links">
                     <a href="photo-gallery.html">Photos:</a></div>
-                    <br>
+                <br>
                 <div class="sidebar-links">
-                    <a href=""> Contact!</a></div>
-                    <br>
+                    <a href="https://www.instagram.com/dead_mans_circus/" target="_blank"> Contact!</a></div>
+                <br>
             </nav>
         </aside>
    
@@ -59,31 +59,27 @@
          <h2 class="music-text">Our Music!</h2>
          
         <div class="link-one"> <a href="https://open.spotify.com/artist/1tX61TOXqXmJMWHA3O0WLM" target="_blank">
-        <img class ="link-img" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Black.png" alt="Spotify link"></a></div> 
-        <div class="link-two"><a href="https://www.youtube.com/watch?v=dRhkM-cKbLY&list=PLhTXYnCQR1bEGYY9aCMXYbBR5fcEwM4uq" target="_blank"><img class="link-img" src="https://s3-alpha.figma.com/hub/file/2729732820/69ab2bc1-7dda-4bf6-ac0b-adcb3e70b063-cover.png" alt="Youtube link"></a></div>
-        <div class="link-three"><a href="https://www.instagram.com/dead_mans_circus/" target="_blank"><img class="link-img" src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png" alt="Instagram link"></a></div>
+        <img class ="link-img" src="Images/spotify.png.png" alt="Spotify link"></a></div> 
+        <div class="link-two"><a href="https://www.youtube.com/watch?v=dRhkM-cKbLY&list=PLhTXYnCQR1bEGYY9aCMXYbBR5fcEwM4uq" target="_blank"><img class="link-img" src="Images/Youtube.png" alt="Youtube link"></a></div>
+        <div class="link-three"><a href="https://www.instagram.com/dead_mans_circus/" target="_blank"><img class="link-img" src="Images/Instagram.png" alt="Instagram link"></a></div>
     </div>
-    
-        <div class="footer">
-            <form action="action_page.php">
-              <div class="form-container">
-                <h3>Dead Dude's Newsletter</h3>
-                <p>Update yourself to clownery...</p>
-              </div>
 
-              <div class="form-container">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="text" placeholder="Email address" name="mail" required>
-                
-                  <input type="checkbox" checked="checked" name="subscribe"> <p>Constant pestering
-                </p>
-              </div>
+        <div class="footer"> <!-- W3 Pop up newsletter-->
+            <div class="w3-container">
+              <h2>Dead Man's Newsletter</h2>
+              <button onclick="document.getElementById('newsletter').style.display='block'" class="w3-button w3-black">Newsletter</button>
 
-              <div class="form-container">
-                <input type="submit" value="Subscribe">
+              <div id="newsletter" class="w3-modal">
+                <div class="w3-modal-content">
+                  <div class="w3-container">
+                    <span onclick="document.getElementById('newsletter').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <div id="ff-compose"></div>
+                      <script async defer src="https://formfacade.com/include/111690541162128611384/form/1FAIpQLSd2RBcRupqC5MQrMtl3rsi9n9FbZO49LjtIlb_GIpfFnT21iw/classic.js?div=ff-compose"></script>
+                    
+                  </div>
+                </div>
               </div>
-            </form>
-            
+            </div>
             </div>
 </body>
 

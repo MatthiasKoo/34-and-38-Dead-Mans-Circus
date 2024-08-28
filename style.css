@@ -6,15 +6,17 @@ html {
 /**text settings**/
 body {
     background-color: black;
-    color: #e61610;
-    font-family: Merienda;
+    
     font-size: 40px;
 }
 
 h1{
     text-align: center;
+    color: #e61610;
     z-index:15;
     position: relative;
+    font-family: Merienda;
+    font-size:2em;
 }
 
 h1 .CIRCUS-title-text {
@@ -24,14 +26,27 @@ h1 .CIRCUS-title-text {
 }
 
 h2 {
+    color: #e61610;
+    font-family: Merienda;
     text-align:center;
 }
 
 p {
+    color: #e61610;
+    font-family: Merienda;
     z-index: 15;
     top:30vh;
     text-align:center;
     font-size: 28px;
+}
+
+a {
+     color: #e61610;
+}
+
+a:hover {
+    cursor: pointer;
+    color: black;
 }
 
 /** Image slideshow CSS **/
@@ -117,7 +132,7 @@ img:nth-of-type(3) {
     padding-left:10%;
     padding-right:10%;
     padding-bottom: 140px;
-    background-image: url('https://i.postimg.cc/v82FWNxG/IMG-6401.png');
+    background-image: url('Images/IMG-Main.jpg');
     background-repeat: no-repeat;
     background-size: 100vw;
 }
@@ -245,75 +260,85 @@ img:nth-of-type(3) {
     left:0;
 }
 
-.sidebar-links {
-    cursor: pointer;
-}
-
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0;
 }
 /** end of hamburger menu FINALLY **/
 
 /**Newsletter**/
-.form-container {
+.button {
+    border:none;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
     text-align:center;
-    padding: 20px;
+    cursor:pointer;
+    -webkit-appearance: button;
 }
 
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
+.modal {
+    display:none;
+    position:fixed;
+    z-index:1;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    
 }
 
 
 /**Page 2: Members **/
 .about-us {
-    font-style: underlined;
+    font-weight: 1px;
+    background-image: url('https://i.ibb.co/p4Fb51R/IMG-6577.jpg');
+    background-size:100vw;
+    background-repeat:repeat;
 }
 
-.vi {
-    grid-area:vi-one;
+.about-us h2 {
+    text-decoration: underline;
+}
+
+.v {
+    grid-area:v-one;
+    display:flex;
 }
 
 .sam {
     grid-area:sam-two;
+    display:flex;
 }
 
 .finn {
     grid-area:finn-three;
+    display:flex;
 }
 
 .tj {
     grid-area:tj-four;
+    display:flex;
 }
 
 .matthias {
     grid-area:matthias-five;
+    display:flex;
 }
 
 .member-container {
     display: grid;
     grid-template-areas: 
-        'vi-one sam-two'
+        'v-one sam-two'
         'finn-three tj-four'
         'matthias-five matthias-five';
     grid-gap: 10px;
 }
 
+.member-img {
+    height:175px;
+    padding-right:15px;
+}
 
 /** phone screens **/
 @media only screen and (max-width: 768px) {
@@ -332,5 +357,31 @@ input[type=submit]:hover {
     
     .music-text {
     font-size: 40px;
+    }
+/** phone screens - Member page **/
+    .member-container {
+        display: grid;
+        grid-template-areas: 
+            'v-one'
+            'sam-two'
+            'finn-three'
+            'tj-four'
+            'matthias-five';
+        grid-gap: 10px;
+    }
+    
+    .member-img {
+        height:160px;
+    }
+    
+    .about-us {
+        font-weight: 1px;
+        font-size: 20px;
+        background-image: url('https://i.ibb.co/p4Fb51R/IMG-6577.jpg');
+        background-size:100vw;
+        background-repeat:repeat;
+    }
+    .about-us p {
+        font-size:25px;
     }
 }
