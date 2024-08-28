@@ -16,6 +16,7 @@ h1{
     z-index:15;
     position: relative;
     font-family: Merienda;
+    font-size:2em;
 }
 
 h1 .CIRCUS-title-text {
@@ -300,8 +301,8 @@ img:nth-of-type(3) {
     text-decoration: underline;
 }
 
-.vi {
-    grid-area:vi-one;
+.v {
+    grid-area:v-one;
     display:flex;
 }
 
@@ -328,7 +329,7 @@ img:nth-of-type(3) {
 .member-container {
     display: grid;
     grid-template-areas: 
-        'vi-one sam-two'
+        'v-one sam-two'
         'finn-three tj-four'
         'matthias-five matthias-five';
     grid-gap: 10px;
@@ -361,7 +362,7 @@ img:nth-of-type(3) {
     .member-container {
         display: grid;
         grid-template-areas: 
-            'vi-one'
+            'v-one'
             'sam-two'
             'finn-three'
             'tj-four'
