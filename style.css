@@ -170,7 +170,7 @@ img:nth-of-type(3) {
 /** Changable Hamburger variables if needed **/
 :root {
     --foreground: #333;
-    --background: white;
+    --background: #e61610;
     --bar-width: 60px;
     --bar-height: 8px;
     --hamburger-gap: 6px;
@@ -266,6 +266,12 @@ img:nth-of-type(3) {
 /** end of hamburger menu FINALLY **/
 
 /**Newsletter**/
+.footer {
+    background-image: url('Images/footer.png');
+    background-size:100vw;
+    background-repeat:repeat;
+}
+
 .button {
     border:none;
     vertical-align:middle;
