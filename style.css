@@ -372,6 +372,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     background-repeat: repeat;
 }
 
+.gallery-container h2 {
+    text-decoration: underline;
+}
+
 .photo-container {
     display: grid;
     grid-template-areas: 
