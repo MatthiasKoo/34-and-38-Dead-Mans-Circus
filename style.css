@@ -364,16 +364,31 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding-right:15px;
 }
 
-/** Photo Gallery **/
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+/** Page 3: Photo Gallery **/
+.gallery-container {
+    background-image: url('Images/GONK!.JPG');
+    background-size:100vw;
+    background-repeat: repeat;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.photo-container {
+    display: grid;
+    grid-template-areas: 
+        'gallery-one gallery-two gallery-three'
+        'gallery-four gallery-five gallery-six';
+    grid-gap: 10px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1.5px solid #ccc;
+  float: left;
+  width: 180px;
+  background-color:#2f4858;
+}
+
+.gallery:hover {
+  border: 1px solid #e61610;
 }
 
 .gallery img {
@@ -384,6 +399,34 @@ div.gallery:hover {
 .desc {
   padding: 15px;
   text-align: center;
+}
+
+.gallery p {
+    font-size: 0.5em;
+}
+
+.gallery-one {
+    grid-area:gallery-one;
+}
+
+.gallery-two {
+    grid-area:gallery-two;
+}
+
+.gallery-three {
+    grid-area:gallery-three;
+}
+
+.gallery-four {
+    grid-area:gallery-four;
+}
+
+.gallery-five {
+    grid-area:gallery-five;
+}
+
+.gallery-six {
+    grid-area:gallery-six;
 }
 
 /** phone screens **/
