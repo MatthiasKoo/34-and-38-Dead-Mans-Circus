@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    color: #000000;
+    color: #e61610;
     text-align:center;
     font-family: Merienda;
 }
@@ -151,6 +151,7 @@ img:nth-of-type(3) {
 }
 
 .music-text {
+    color:black;
     grid-area:text;
     position:relative;
 }
@@ -375,7 +376,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     display: grid;
     grid-template-areas: 
         'gallery-one gallery-two gallery-three'
-        'gallery-four gallery-five gallery-six';
+        'gallery-four gallery-five gallery-six'
+        'gallery-seven gallery-eight gallery-nine';
     grid-gap: 10px;
 }
 
@@ -427,6 +429,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .gallery-six {
     grid-area:gallery-six;
+}
+
+.gallery-seven {
+    grid-area:gallery-seven;
+}
+
+.gallery-eight {
+    grid-area:gallery-eight;
+}
+
+.gallery-nine {
+    grid-area:gallery-nine;
 }
 
 /** phone screens **/
