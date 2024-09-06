@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    color: #000000;
+    color: #e61610;
     text-align:center;
     font-family: Merienda;
 }
@@ -68,17 +68,6 @@ a:hover {
     z-index: 1; 
     justify-content:center;
     align-items:center;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    pointer-events: none;
 }
 
 @keyframes fade {
@@ -151,6 +140,7 @@ img:nth-of-type(3) {
 }
 
 .music-text {
+    color:black;
     grid-area:text;
     position:relative;
 }
@@ -364,16 +354,37 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     padding-right:15px;
 }
 
-/** Photo Gallery **/
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+/** Page 3: Photo Gallery **/
+.gallery-container {
+    background-image: url('Images/GONK!.JPG');
+    background-size:100vw;
+    background-repeat: repeat;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.gallery-container h2 {
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.photo-container {
+    display: grid;
+    grid-template-areas: 
+        'gallery-one gallery-two gallery-three'
+        'gallery-four gallery-five gallery-six'
+        'gallery-seven gallery-eight gallery-nine';
+    grid-gap: 10px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1.5px solid #ccc;
+  float: left;
+  width: 180px;
+  background-color:#2f4858;
+}
+
+.gallery:hover {
+  border: 1px solid #e61610;
 }
 
 .gallery img {
@@ -384,6 +395,46 @@ div.gallery:hover {
 .desc {
   padding: 15px;
   text-align: center;
+}
+
+.gallery p {
+    font-size: 0.5em;
+}
+
+.gallery-one {
+    grid-area:gallery-one;
+}
+
+.gallery-two {
+    grid-area:gallery-two;
+}
+
+.gallery-three {
+    grid-area:gallery-three;
+}
+
+.gallery-four {
+    grid-area:gallery-four;
+}
+
+.gallery-five {
+    grid-area:gallery-five;
+}
+
+.gallery-six {
+    grid-area:gallery-six;
+}
+
+.gallery-seven {
+    grid-area:gallery-seven;
+}
+
+.gallery-eight {
+    grid-area:gallery-eight;
+}
+
+.gallery-nine {
+    grid-area:gallery-nine;
 }
 
 /** phone screens **/
@@ -404,6 +455,19 @@ div.gallery:hover {
     .music-text {
     font-size: 40px;
     }
+
+    .slide-image { 
+    width:120vw;
+    }
+
+    .links {
+    width:120vw;
+    }
+
+    .footer {
+    width:120vw;
+    }
+    
 /** phone screens - Member page **/
     .member-container {
         display: grid;
@@ -429,5 +493,20 @@ div.gallery:hover {
     }
     .about-us p {
         font-size:25px;
+    }
+/**phone screens - Photo Gallery page**/
+    .photo-container {
+        grid-template-areas: 
+            'gallery-one gallery-two'
+            'gallery-three gallery-four'
+            'gallery-five gallery-six'
+            'gallery-seven gallery-eight' 
+            'gallery-nine gallery-nine';
+        grid-gap: 10px;
+    }
+
+    .gallery-container h2 {
+        text-decoration: underline;
+        text-align:right;
     }
 }
